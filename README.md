@@ -18,3 +18,11 @@ mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ---
 <sub>Entered on [make.fun](https://make.fun/?ref=j271enfs&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
+
+## The clip
+
+**GTA 6 Cops Ram My Ambulance at Vice Beach**
+
+A GTA 6 five-star police chase at Vice Ocean Beach: cops ram an ambulance, it recovers and escapes. A vertical Short, about 24 seconds long.
+
+The video's address will stand in VIDEO.json once it is published on YouTube.

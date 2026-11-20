@@ -6,12 +6,13 @@ const { join } = require('node:path');
 const BOT_DIR = process.env.MAKEFUN_BOT_DIR ?? '/bot';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-async function main(): Promise<void> {
+/** Copy the entry's video address into the grader's output directory. */
+async function copyVideoFile(): Promise<void> {
   await mkdir(OUTPUT_DIR, { recursive: true });
   await copyFile(join(BOT_DIR, 'VIDEO.json'), join(OUTPUT_DIR, 'VIDEO.json'));
 }
 
-main().catch((error: unknown) => {
+copyVideoFile().catch((error: unknown) => {
   const message = error instanceof Error ? error.message : String(error);
   console.error(`Could not deliver VIDEO.json to the grader: ${message}`);
   process.exit(1);
